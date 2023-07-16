@@ -113,7 +113,8 @@ export const Card: Component<CardProps> = (props) => {
         transform: `translate3d(${props.card.coords.x}px, ${props.card.coords.y}px, -100px)`,
         padding: '2rem 2.5rem',
         border: '1px solid black',
-        cursor: 'move'
+        cursor: 'move',
+        'user-select': 'none',
       }}
     >
       {props.card.text} {props.card.id + 1}
