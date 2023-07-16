@@ -110,12 +110,13 @@ export const Card: Component<CardProps> = (props) => {
         position: 'absolute',
         left: 0,
         top: 0,
-        transform: `translate(${props.card.coords.x}px, ${props.card.coords.y}px)`,
+        transform: `translate3d(${props.card.coords.x}px, ${props.card.coords.y}px, -100px)`,
         padding: '2rem 2.5rem',
         border: '1px solid black',
+        cursor: 'move'
       }}
     >
-      {props.card.text}
+      {props.card.text} {props.card.id + 1}
     </div>
   )
 }
